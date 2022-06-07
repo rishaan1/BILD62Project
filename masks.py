@@ -26,17 +26,7 @@ mask_usage_data["COUNTYFP"] = counties
 
 #Part III Function
 
- state_codes = {
-        'WA': '53', 'DE': '10', 'DC': '11', 'WI': '55', 'WV': '54', 'HI': '15',
-        'FL': '12', 'WY': '56', 'PR': '72', 'NJ': '34', 'NM': '35', 'TX': '48',
-        'LA': '22', 'NC': '37', 'ND': '38', 'NE': '31', 'TN': '47', 'NY': '36',
-        'PA': '42', 'AK': '02', 'NV': '32', 'NH': '33', 'VA': '51', 'CO': '08',
-        'CA': '06', 'AL': '01', 'AR': '05', 'VT': '50', 'IL': '17', 'GA': '13',
-        'IN': '18', 'IA': '19', 'MA': '25', 'AZ': '04', 'ID': '16', 'CT': '09',
-        'ME': '23', 'MD': '24', 'OK': '40', 'OH': '39', 'UT': '49', 'MO': '29',
-        'MN': '27', 'MI': '26', 'RI': '44', 'KS': '20', 'MT': '30', 'MS': '28',
-        'SC': '45', 'KY': '21', 'OR': '41', 'SD': '46'
-    }
+
 
 def states_with_most_and_least_mask_usage(state_codes):
     """ Outputs which states wear their masks the most & which states wears it the least given the county codes
@@ -89,15 +79,6 @@ def states_with_most_and_least_mask_usage(state_codes):
 
 
 # Part IV, North vs South:
-
-
-northern_counties = [int('06001'), int('06003'), int('06005'), int('6007'), int('06009'), int('06011'),int('06013'), 
-                    int('06015'), int('06017'),int('06019'),int('06021'),int('06023'), int('06033'),
-                     int('06035'),int('06039'),int('06041'),int('06043'),int('06045'),int('06047'),int('06049'),int('06055'),int('06057'),int('06061'),int('06063'),int('06067'),int('06075'),int('06077'),
-                     int('06079'), int('06081'), int('06085'),int('06087'),int('06089'),int('06091'),int('06093'),int('06095'),int('06097'),int('06099'),int('06101'),int('06103'),int('06105'),int('06109'),
-                     int('06113'),int('06115')]
-southern_counties = [int('06025'), int('06027'), int('06029'), int('06031'), int('06037'),int('06051'),int('06053'),int('06059'),int('06065'),int('06069'),int('06071'),int('06073'),int('06083'),
-                    int('06107'),int('06111')]
 
 
 def north_vs_south(mask_usage_data, southern_counties, northern_counties):
